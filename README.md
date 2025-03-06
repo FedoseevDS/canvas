@@ -7,4 +7,5 @@ eslint-plugin-prettier, eslint-plugin-react, prettier
 
 1-canvas - подготовка проекта к работе  
 2-canvas - установка линтера  
-3-canvas - добавил холст canvas на страницу
+3-canvas - добавил холст canvas на страницу  
+4-canvas - настройка рисования (пробую новые методы)
