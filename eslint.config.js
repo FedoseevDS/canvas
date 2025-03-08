@@ -42,7 +42,8 @@ export default tseslint.config(
             },
             value: {
               'internal-components': ['components', 'components/*'],
-              'internal-examples': ['examples', 'examples/*'],
+              'internal-pages': ['pages', 'pages/*'],
+              'internal-routers': ['routers', 'routers/*'],
             },
           },
           environment: 'node',
@@ -52,7 +53,7 @@ export default tseslint.config(
             'internal-type',
             'internal',
             'internal-components',
-            'internal-examples',
+            'internal-pages',
             ['parent-type', 'sibling-type', 'index-type'],
             ['parent', 'sibling', 'index'],
             'object',

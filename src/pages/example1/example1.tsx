@@ -4,7 +4,9 @@
  * 1 прямоугольник с добавлением фотографии
  */
 
-export const example1 = (ctx: CanvasRenderingContext2D) => {
+import Canvas from 'components/canvas';
+
+const config = (ctx: CanvasRenderingContext2D) => {
   const img = new Image();
   img.src = 'https://u.9111s.ru/uploads/202412/10/646e9a79be0f5c1bd1cd886778a360dd.jpg';
   ctx.drawImage(img, 350, 400, 200, 200);
@@ -29,3 +31,7 @@ export const example1 = (ctx: CanvasRenderingContext2D) => {
   ctx.lineJoin = 'miter';
   ctx.strokeRect(500, 50, 100, 100);
 };
+
+const Example1 = () => <Canvas onDraw={config} />;
+
+export default Example1;
