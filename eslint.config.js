@@ -40,6 +40,10 @@ export default tseslint.config(
             type: {
               'internal-types': ['types', 'types/*'],
             },
+            value: {
+              'internal-components': ['components', 'components/*'],
+              'internal-examples': ['examples', 'examples/*'],
+            },
           },
           environment: 'node',
           groups: [
@@ -47,6 +51,8 @@ export default tseslint.config(
             ['builtin', 'external'],
             'internal-type',
             'internal',
+            'internal-components',
+            'internal-examples',
             ['parent-type', 'sibling-type', 'index-type'],
             ['parent', 'sibling', 'index'],
             'object',
