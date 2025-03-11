@@ -10,4 +10,5 @@ eslint-plugin-prettier, eslint-plugin-react, prettier, react-router
 3-canvas - добавил холст canvas на страницу  
 4-canvas - настройка рисования (пробую новые методы)  
 5-canvas - добавил картинку  
-6-canvas - создал общий компонент canvas
+6-canvas - создал общий компонент canvas  
+7-canvas - эмитация кисточки

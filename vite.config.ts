@@ -8,8 +8,10 @@ export default defineConfig({
   resolve: {
     alias: {
       components: resolve(__dirname, './src/components'),
+      helpers: resolve(__dirname, './src/helpers'),
       pages: resolve(__dirname, './src/pages'),
       routers: resolve(__dirname, './src/routers'),
+      types: resolve(__dirname, './src/types'),
     },
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
