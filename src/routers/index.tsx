@@ -1,8 +1,14 @@
 import { createBrowserRouter, Navigate } from 'react-router';
 
+import Canvas from 'components/canvas';
 import Layout from 'components/layout';
 
-import Example1 from 'pages/example1/example1';
+import { pagesConfig } from 'pages/main';
+
+const routes = Object.entries(pagesConfig).map(([path, config]) => ({
+  element: <Canvas onRender={config.onRender} />,
+  path,
+}));
 
 export const router = createBrowserRouter([
   {
@@ -16,10 +22,7 @@ export const router = createBrowserRouter([
         ),
         index: true,
       },
-      {
-        element: <Example1 />,
-        path: 'example-1',
-      },
+      ...routes,
     ],
     element: <Layout />,
     path: '/',

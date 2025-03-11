@@ -1,12 +1,12 @@
 /**
  * Пример 1: добавил задний фон, ввиде диаграммы с координатами, 1 прямоугольник с плошной
  * заливкой, 4 прямоугольника, без заливки с разными цветами границ и типами соединений углов.
- * 1 прямоугольник с добавлением фотографии
+ * 1 прямоугольник с добавлением фотографии, треугольник и просто черточка.
  */
 
-import Canvas from 'components/canvas';
+import { Render } from 'types';
 
-const config = (ctx: CanvasRenderingContext2D) => {
+export const configExample1: Render = ({ ctx }) => {
   const img = new Image();
   img.src = 'https://u.9111s.ru/uploads/202412/10/646e9a79be0f5c1bd1cd886778a360dd.jpg';
 
@@ -53,7 +53,3 @@ const config = (ctx: CanvasRenderingContext2D) => {
     ctx.stroke();
   };
 };
-
-const Example1 = () => <Canvas onDraw={config} />;
-
-export default Example1;

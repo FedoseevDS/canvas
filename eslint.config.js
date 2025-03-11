@@ -42,6 +42,7 @@ export default tseslint.config(
             },
             value: {
               'internal-components': ['components', 'components/*'],
+              'internal-helpers': ['helpers', 'helpers/*'],
               'internal-pages': ['pages', 'pages/*'],
               'internal-routers': ['routers', 'routers/*'],
             },
