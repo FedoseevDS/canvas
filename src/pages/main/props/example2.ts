@@ -4,19 +4,19 @@
 
 import { Render } from 'types';
 
-export const configExample2: Render = ({ ctx, event }) => {
-  // console.log('ctx', ctx);
-  // console.log('onMouseMove', onMouseMove);
-
-  if (event) {
+export const configExample2: Render = ({ canvas, ctx }) => {
+  const handleMouseMove = (event: MouseEvent) => {
     const x = event.offsetX;
     const y = event.offsetY;
 
-    // ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-
-    console.log('x', x);
-    console.log('y', y);
-
     ctx.fillRect(x, y, 10, 10);
+  };
+
+  if (canvas) {
+    canvas.onmousemove = handleMouseMove;
+
+    return () => {
+      canvas.onmousemove = null;
+    };
   }
 };
