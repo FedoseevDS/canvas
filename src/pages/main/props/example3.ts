@@ -19,5 +19,9 @@ export const configExample3: Render = ({ canvas, ctx, height, width }) => {
       ctx.fill();
       ctx.closePath();
     };
+
+    return () => {
+      canvas.onmousemove = null;
+    };
   }
 };
