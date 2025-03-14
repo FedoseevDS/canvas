@@ -3,7 +3,7 @@ import { Render } from 'types';
 export const configExample3: Render = ({ canvas, ctx, height, width }) => {
   const pi = Math.PI;
 
-  if (canvas && ctx && width && height) {
+  if (canvas && width && height) {
     canvas.onmousemove = (event: MouseEvent) => {
       const x = event.offsetX;
       const y = event.offsetY;
