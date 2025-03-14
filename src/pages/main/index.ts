@@ -3,6 +3,7 @@ import { configExample2 } from './props/example2';
 import { configExample3 } from './props/example3';
 import { configExample4 } from './props/example4';
 import { configExample5 } from './props/example5';
+import { configExample6 } from './props/example6';
 
 export const pagesConfig = {
   'example-1': {
@@ -19,5 +20,8 @@ export const pagesConfig = {
   },
   'example-5': {
     onRender: configExample5,
+  },
+  'example-6': {
+    onRender: configExample6,
   },
 };
