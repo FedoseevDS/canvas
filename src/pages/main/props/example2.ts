@@ -1,7 +1,3 @@
-/**
- * Пример 2: эмитация кисточки
- */
-
 import { Render } from 'types';
 
 export const configExample2: Render = ({ canvas, ctx }) => {
