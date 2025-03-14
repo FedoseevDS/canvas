@@ -4,4 +4,5 @@ export const configLinks = [
   { description: 'Круги, дуги, окружности', path: 'example-3' },
   { description: 'Анимированный фон', path: 'example-4' },
   { description: 'Анимируем график синуса', path: 'example-5' },
+  { description: 'Спирограф', path: 'example-6' },
 ];

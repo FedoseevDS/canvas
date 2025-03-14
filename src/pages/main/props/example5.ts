@@ -8,13 +8,13 @@ export const configExample5: Render = ({ ctx, width }) => {
 
   const drawSin = () => {
     if (width) {
-      ctx.beginPath();
       y = Math.sin(x);
       if (x >= width) {
         x = 0;
       } else {
         x = x + 0.3;
       }
+      ctx.beginPath();
       ctx.fillRect(8 * x, 400 + 20 * y, 2, 2);
       ctx.stroke();
       timer = setTimeout(drawSin, 50);
