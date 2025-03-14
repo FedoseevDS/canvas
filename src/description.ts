@@ -29,5 +29,21 @@
  *
  * Кисточка
  *
- * canvas.onmousemove = () => {}
+ * canvas.onmousemove = () => {} - подключаю событие мыши
+ *
+ * Круги, дуги, окружности
+ *
+ * ctx.beginPath() - начинаю новый путь
+ * ctx.arc(x, y, radius, angleStart, angleEnd, anticlockwise) - задаю начальную точку для окружности
+ * x - координата x
+ * y - координата y
+ * radius - радиус окружности в пикселях
+ * angleStart - начальный угол
+ * angleEnd - конечный угол
+ * anticlockwise - false (по часовой стрелки), true (против часовой стрелки)
+ * ctx.lineWidth - толщина линии
+ * ctx.strokeStyle - цвет обводки
+ * ctx.fillStyle - цвет заливки
+ * ctx.fill() - выполняет заливку фигуры
+ * ctx.closePath() - закрываю путь
  */

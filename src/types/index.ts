@@ -1,1 +1,8 @@
-export type Render = (params: { ctx: CanvasRenderingContext2D; event?: MouseEvent }) => void;
+export type Render = (params: RenderParams) => (() => void) | void;
+
+type RenderParams = {
+  canvas?: HTMLCanvasElement;
+  ctx: CanvasRenderingContext2D;
+  height?: number;
+  width?: number;
+};

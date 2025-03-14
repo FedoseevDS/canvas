@@ -7,6 +7,7 @@ const Links = () => {
     <div className={styles.container}>
       <Link to={'example-1'}>Прямоугольник, треугольник, черточка, картинка</Link>
       <Link to={'example-2'}>Кисточка</Link>
+      <Link to={'example-3'}>Круги, дуги, окружности</Link>
     </div>
   );
 };

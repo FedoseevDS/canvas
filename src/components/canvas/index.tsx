@@ -18,20 +18,18 @@ const Canvas = ({ height = 750, onRender, width = 950 }: CanvasProps) => {
     const ctx = canvas?.getContext('2d');
 
     if (ctx && canvas) {
-      const handleMouseMove = (event: MouseEvent) => {
-        onRender({ ctx, event });
-      };
-
-      canvas.onmousemove = handleMouseMove;
-
-      onRender({ ctx });
+      const cleanup = onRender({ canvas, ctx, height, width });
 
       return () => {
+        if (cleanup) {
+          cleanup();
+        }
+
         resetContext(ctx);
         ctx.clearRect(0, 0, canvas.width, canvas.height);
       };
     }
-  }, [onRender]);
+  }, [onRender, height, width]);
 
   return (
     <div className={styles.container}>
