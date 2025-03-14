@@ -1,13 +1,20 @@
 import { Link } from 'react-router';
 
+import { configLinks } from './const';
+
 import styles from './styles.module.css';
 
 const Links = () => {
   return (
     <div className={styles.container}>
-      <Link to={'example-1'}>Прямоугольник, треугольник, черточка, картинка</Link>
-      <Link to={'example-2'}>Кисточка</Link>
-      <Link to={'example-3'}>Круги, дуги, окружности</Link>
+      {configLinks.map(({ description, path }) => (
+        <Link
+          key={path}
+          to={path}
+        >
+          {description}
+        </Link>
+      ))}
     </div>
   );
 };
