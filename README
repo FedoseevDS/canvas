@@ -2,10 +2,12 @@
 
 Front:
 
-Стек: vita, react, typescript, normalize.css
+Стек: vita, react, typescript, normalize.css, eslint, prettier, eslint-config-prettier, 
+eslint-plugin-prettier, eslint-plugin-react
 
 Описание веток:
 
 front-1 - подготовка проекта к работе
+front-2 - установка и настройка eslint, prettier
 
 Backend:

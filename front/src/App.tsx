@@ -1,3 +1,9 @@
-const App = () => <div>Проверка связи</div>;
+const App = () => {
+  return (
+    <div>
+      <div>Проверка</div>
+    </div>
+  );
+};
 
-export default App
+export default App;
